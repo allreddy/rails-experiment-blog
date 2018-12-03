@@ -7,6 +7,20 @@
     <%=@article.text %>
 </p>
 
+<h2>Comments</h2>
+<table>
+    <tr>
+        <th>Commenter</th>
+        <th>Comment</th>
+    </tr>
+    <%= render @article.comments %>
+</table>
+
+<h2>Add a comment</h2>
+<%= render 'comments/form' %>
+
+
+
 <%= link_to 'Edit', edit_article_path %>
 <%= link_to 'Delete', article_path,
     method: :delete,
