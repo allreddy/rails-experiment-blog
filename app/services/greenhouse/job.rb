@@ -2,7 +2,7 @@ module Greenhouse
     class Job < Base
         attr_accessor   :id,
                         :title,
-                        :location
+                        :location,
                         :absolute_url
 
         def initialize(args = {})

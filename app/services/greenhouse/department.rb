@@ -18,8 +18,6 @@ module Greenhouse
         def parse_jobs(args = {})
             args.fetch('jobs', []).map { |job| Job.new(job) }
         end
-
     end
-
 end
                     

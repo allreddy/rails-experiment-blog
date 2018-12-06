@@ -1,0 +1,20 @@
+<h1>Departments</h1>
+
+<% @departments.each do |department| %>
+    <h2><%=department.name%></h2>
+    <table>
+        <tr>
+            <th> Title </th>
+            <th> Location </th>
+            <th> Website </th>
+        </tr>
+
+        <% department.jobs.each do |job| %>
+            <tr>
+                <th><%=job.title%></th>
+                <th><%=job.location%></th>
+                <th><a href="<%=job.absolute_url%>">Visit</a></th>
+            </tr>
+        <%end%>
+    </table>
+<% end %>

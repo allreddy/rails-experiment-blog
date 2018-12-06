@@ -1,4 +1,3 @@
-require 'active_support'
 module Greenhouse
     class Base
         attr_accessor :errors
